@@ -3,86 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webdesign Project</title>
+    <title>Dreshaj Automobile | Gebrauchtwagen & Fahrzeughandel in Memmingen</title>
+    <meta name="description" content="Dreshaj Automobile in Memmingen – An- und Verkauf von Gebrauchtwagen und Fahrzeugen.">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header>
-        <div class="container">
-            <a href="index.html" class="logo">Webdesign</a>
+        <div class="header-container">
+            <div class="logo">
+                <h1>Dreshaj <span>Automobile</span></h1>
+            </div>
             <nav>
-                <ul>
-                    <li><a href="index.html" class="active">Startseite</a></li>
-                    <li><a href="#about">Über uns</a></li>
-                    <li><a href="#services">Leistungen</a></li>
-                    <li><a href="#contact">Kontakt</a></li>
-                </ul>
+                <a href="index.html">Startseite</a>
+                <a href="#katalog">Fahrzeuge</a>
+                <a href="#kontakt">Kontakt</a>
+                <a href="impressum.html">Impressum</a>
+                <a href="datenschutz.html">Datenschutz</a>
             </nav>
         </div>
     </header>
 
-    <main>
-        <section class="hero">
-            <div class="container">
-                <h1>Willkommen zu unserem Webdesign-Projekt</h1>
-                <p>Moderne, responsive und benutzerfreundliche Websites für digitale Projekte.</p>
-                <a href="#contact" class="btn">Mehr erfahren</a>
-            </div>
-        </section>
+    <section class="hero">
+        <div class="badge">★ 5,0 Sterne bei Google (11 Rezensionen)</div>
+        <h2>Dreshaj Automobile in Memmingen</h2>
+        <p>Ihr zuverlässiger Partner für An- und Verkauf von Gebrauchtfahrzeugen.</p>
+    </section>
 
-        <section id="about" class="about">
-            <div class="container">
-                <h2>Über das Projekt</h2>
-                <p>Dieses Webdesign-Projekt demonstriert die grundlegende Struktur einer modernen HTML5-Webseite mit semantischem Aufbau und flexiblem Layout.</p>
-            </div>
-        </section>
-
-        <section id="services" class="services">
-            <div class="container">
-                <h2>Leistungen</h2>
-                <div class="grid">
-                    <div class="card">
-                        <h3>Responsive Design</h3>
-                        <p>Optimierte Darstellung für Smartphones, Tablets und Desktop-Monitore.</p>
-                    </div>
-                    <div class="card">
-                        <h3>Semantisches HTML</h3>
-                        <p>Sauberer Code nach aktuellen Webstandards für gute Barrierefreiheit und SEO.</p>
-                    </div>
-                    <div class="card">
-                        <h3>CSS Stylings</h3>
-                        <p>Ansprechendes Design mit strukturiertem CSS-Code.</p>
+    <main class="container">
+        <!-- Fahrzeugkatalog (Wird von GitHub Actions als festes HTML generiert) -->
+        <section id="katalog">
+            <h2 class="section-title">Aktueller Fahrzeugbestand</h2>
+            <p class="section-desc">Automatisch abgeglichen mit unserem mobile.de-Bestand.</p>
+            
+            <div class="catalog-grid">
+<!-- CARS_START -->
+                <div class="car-card">
+                    <img src="img/auto1.avif" alt="Fahrzeugangebot Dreshaj Automobile" onerror="this.src='https://via.placeholder.com/400x250?text=Echtes+Foto+einfuegen'">
+                    <div class="car-details">
+                        <h3>Fiat Ducato Transporter</h3>
+                        <div class="car-price">4.300 €</div>
+                        <ul class="car-specs">
+                            <li><strong>Erstzulassung:</strong> 06/2015</li>
+                            <li><strong>Kilometerstand:</strong> 154.000 km</li>
+                            <li><strong>Kraftstoff:</strong> Diesel</li>
+                        </ul>
+                        <a href="tel:01717729532" class="btn">Jetzt anfragen</a>
                     </div>
                 </div>
+
+                <div class="car-card">
+                    <img src="img/auto2.avif" alt="Fahrzeugangebot Dreshaj Automobile" onerror="this.src='https://via.placeholder.com/400x250?text=Echtes+Foto+einfuegen'">
+                    <div class="car-details">
+                        <h3>Skoda Octavia Combi 2.0 TDI DSG</h3>
+                        <div class="car-price">2.900 €</div>
+                        <ul class="car-specs">
+                            <li><strong>Erstzulassung:</strong> 10/2010</li>
+                            <li><strong>Kilometerstand:</strong> 227.800 km</li>
+                            <li><strong>Kraftstoff:</strong> Diesel</li>
+                        </ul>
+                        <a href="tel:01717729532" class="btn">Jetzt anfragen</a>
+                    </div>
+                </div>
+<!-- CARS_END -->
             </div>
         </section>
 
-        <section id="contact" class="contact">
-            <div class="container">
-                <h2>Kontakt</h2>
-                <form action="#" method="post">
-                    <div class="form-group">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">E-Mail:</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Nachricht:</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn">Absenden</button>
-                </form>
+        <!-- Öffnungszeiten & Kontakt -->
+        <section class="info-section" id="kontakt">
+            <div class="info-box">
+                <h3>Kontakt & Adresse</h3>
+                <p><strong>Dreshaj Automobile</strong></p>
+                <p>Haußmannstraße 3–5</p>
+                <p>87700 Memmingen</p>
+                <br>
+                <p><strong>Telefon:</strong> <a href="tel:01717729532">0171 7729532</a></p>
+            </div>
+
+            <div class="info-box">
+                <h3>Öffnungszeiten</h3>
+                <p><strong>Montag – Freitag:</strong> 09:00 – 17:00 Uhr</p>
+                <p><strong>Samstag:</strong> 09:00 – 12:00 Uhr</p>
+                <p><strong>Sonntag:</strong> Geschlossen</p>
             </div>
         </section>
     </main>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2026 Webdesign. Alle Rechte vorbehalten.</p>
-        </div>
+        <p>&copy; Dreshaj Automobile Memmingen. Alle Rechte vorbehalten.</p>
+        <p>
+            <a href="impressum.html">Impressum</a> | 
+            <a href="datenschutz.html">Datenschutzerklärung</a>
+        </p>
     </footer>
+
 </body>
 </html>
