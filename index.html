@@ -3,98 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dreshaj Automobile | Gebrauchtwagen & Fahrzeughandel in Memmingen</title>
-    <meta name="description" content="Dreshaj Automobile in Memmingen – An- und Verkauf von Gebrauchtwagen und Fahrzeugen.">
+    <title>Dreshaj Automobile – Fahrzeugbestand</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <div class="header-container">
-            <div class="logo">
-                <h1>Dreshaj <span>Automobile</span></h1>
-            </div>
-            <nav>
-                <a href="index.html">Startseite</a>
-                <a href="#katalog">Fahrzeuge</a>
-                <a href="#kontakt">Kontakt</a>
-                <a href="impressum.html">Impressum</a>
-                <a href="datenschutz.html">Datenschutz</a>
-            </nav>
+    <header class="header">
+        <div class="container">
+            <h1>Dreshaj Automobile</h1>
+            <p>Ihr zuverlässiger Partner für Gebrauchtwagen</p>
+            <a href="tel:01717729532" class="header-phone">📞 0171 7729532</a>
         </div>
     </header>
 
-    <section class="hero">
-        <div class="badge">★ 5,0 Sterne bei Google (11 Rezensionen)</div>
-        <h2>Dreshaj Automobile in Memmingen</h2>
-        <p>Ihr zuverlässiger Partner für An- und Verkauf von Gebrauchtfahrzeugen.</p>
-    </section>
-
     <main class="container">
-        <!-- Fahrzeugkatalog (Wird von GitHub Actions als festes HTML generiert) -->
-        <section id="katalog">
-            <h2 class="section-title">Aktueller Fahrzeugbestand</h2>
-            <p class="section-desc">Automatisch abgeglichen mit unserem mobile.de-Bestand.</p>
-            
-            <div class="catalog-grid">
-<!-- CARS_START -->
+        <section class="inventory">
+            <h2>Aktueller Fahrzeugbestand</h2>
+            <div class="car-grid">
+                <!-- CARS_START -->
                 <div class="car-card">
-                    <img src="img/auto1.jpg" alt="Fahrzeugangebot Dreshaj Automobile" onerror="this.src='https://via.placeholder.com/400x250?text=Echtes+Foto+einfuegen'">
+                    <img src="img/auto1.avif" alt="Fahrzeug 1" onerror="this.src='https://via.placeholder.com/400x250?text=Foto+nicht+verfuegbar'">
                     <div class="car-details">
-                        <h3>Fiat Ducato Transporter</h3>
-                        <div class="car-price">4.300 €</div>
+                        <h3>Fahrzeug 1</h3>
+                        <div class="car-price">Preis auf Anfrage</div>
                         <ul class="car-specs">
-                            <li><strong>Erstzulassung:</strong> 06/2015</li>
-                            <li><strong>Kilometerstand:</strong> 154.000 km</li>
-                            <li><strong>Kraftstoff:</strong> Diesel</li>
+                            <li><strong>Erstzulassung:</strong> Auf Anfrage</li>
+                            <li><strong>Kilometerstand:</strong> Auf Anfrage</li>
+                            <li><strong>Kraftstoff:</strong> Benzin / Diesel</li>
                         </ul>
                         <a href="tel:01717729532" class="btn">Jetzt anfragen</a>
                     </div>
                 </div>
 
                 <div class="car-card">
-                    <img src="img/auto2.jpg" alt="Fahrzeugangebot Dreshaj Automobile" onerror="this.src='https://via.placeholder.com/400x250?text=Echtes+Foto+einfuegen'">
+                    <img src="img/auto2.avif" alt="Fahrzeug 2" onerror="this.src='https://via.placeholder.com/400x250?text=Foto+nicht+verfuegbar'">
                     <div class="car-details">
-                        <h3>Skoda Octavia Combi 2.0 TDI DSG</h3>
-                        <div class="car-price">2.900 €</div>
+                        <h3>Fahrzeug 2</h3>
+                        <div class="car-price">Preis auf Anfrage</div>
                         <ul class="car-specs">
-                            <li><strong>Erstzulassung:</strong> 10/2010</li>
-                            <li><strong>Kilometerstand:</strong> 227.800 km</li>
-                            <li><strong>Kraftstoff:</strong> Diesel</li>
+                            <li><strong>Erstzulassung:</strong> Auf Anfrage</li>
+                            <li><strong>Kilometerstand:</strong> Auf Anfrage</li>
+                            <li><strong>Kraftstoff:</strong> Benzin / Diesel</li>
                         </ul>
                         <a href="tel:01717729532" class="btn">Jetzt anfragen</a>
                     </div>
                 </div>
-<!-- CARS_END -->
-            </div>
-        </section>
-
-        <!-- Öffnungszeiten & Kontakt -->
-        <section class="info-section" id="kontakt">
-            <div class="info-box">
-                <h3>Kontakt & Adresse</h3>
-                <p><strong>Dreshaj Automobile</strong></p>
-                <p>Haußmannstraße 3–5</p>
-                <p>87700 Memmingen</p>
-                <br>
-                <p><strong>Telefon:</strong> <a href="tel:01717729532">0171 7729532</a></p>
-            </div>
-
-            <div class="info-box">
-                <h3>Öffnungszeiten</h3>
-                <p><strong>Montag – Freitag:</strong> 09:00 – 17:00 Uhr</p>
-                <p><strong>Samstag:</strong> 09:00 – 12:00 Uhr</p>
-                <p><strong>Sonntag:</strong> Geschlossen</p>
+                <!-- CARS_END -->
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; Dreshaj Automobile Memmingen. Alle Rechte vorbehalten.</p>
-        <p>
-            <a href="impressum.html">Impressum</a> | 
-            <a href="datenschutz.html">Datenschutzerklärung</a>
-        </p>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; Dreshaj Automobile | <a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutz</a></p>
+        </div>
     </footer>
 
 </body>
