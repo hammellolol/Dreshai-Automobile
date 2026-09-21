@@ -3,61 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dreshaj Automobile – Fahrzeugbestand</title>
+    <title>Webdesign Project</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <header class="header">
+    <header>
         <div class="container">
-            <h1>Dreshaj Automobile</h1>
-            <p>Ihr zuverlässiger Partner für Gebrauchtwagen</p>
-            <a href="tel:01717729532" class="header-phone">📞 0171 7729532</a>
+            <a href="index.html" class="logo">Webdesign</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Startseite</a></li>
+                    <li><a href="#about">Über uns</a></li>
+                    <li><a href="#services">Leistungen</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <main class="container">
-        <section class="inventory">
-            <h2>Aktueller Fahrzeugbestand</h2>
-            <div class="car-grid">
-                <!-- CARS_START -->
-                <div class="car-card">
-                    <img src="img/auto1.avif" alt="Fahrzeug 1" onerror="this.src='https://via.placeholder.com/400x250?text=Foto+nicht+verfuegbar'">
-                    <div class="car-details">
-                        <h3>Fahrzeug 1</h3>
-                        <div class="car-price">Preis auf Anfrage</div>
-                        <ul class="car-specs">
-                            <li><strong>Erstzulassung:</strong> Auf Anfrage</li>
-                            <li><strong>Kilometerstand:</strong> Auf Anfrage</li>
-                            <li><strong>Kraftstoff:</strong> Benzin / Diesel</li>
-                        </ul>
-                        <a href="tel:01717729532" class="btn">Jetzt anfragen</a>
-                    </div>
-                </div>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Willkommen zu unserem Webdesign-Projekt</h1>
+                <p>Moderne, responsive und benutzerfreundliche Websites für digitale Projekte.</p>
+                <a href="#contact" class="btn">Mehr erfahren</a>
+            </div>
+        </section>
 
-                <div class="car-card">
-                    <img src="img/auto2.avif" alt="Fahrzeug 2" onerror="this.src='https://via.placeholder.com/400x250?text=Foto+nicht+verfuegbar'">
-                    <div class="car-details">
-                        <h3>Fahrzeug 2</h3>
-                        <div class="car-price">Preis auf Anfrage</div>
-                        <ul class="car-specs">
-                            <li><strong>Erstzulassung:</strong> Auf Anfrage</li>
-                            <li><strong>Kilometerstand:</strong> Auf Anfrage</li>
-                            <li><strong>Kraftstoff:</strong> Benzin / Diesel</li>
-                        </ul>
-                        <a href="tel:01717729532" class="btn">Jetzt anfragen</a>
+        <section id="about" class="about">
+            <div class="container">
+                <h2>Über das Projekt</h2>
+                <p>Dieses Webdesign-Projekt demonstriert die grundlegende Struktur einer modernen HTML5-Webseite mit semantischem Aufbau und flexiblem Layout.</p>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <div class="container">
+                <h2>Leistungen</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3>Responsive Design</h3>
+                        <p>Optimierte Darstellung für Smartphones, Tablets und Desktop-Monitore.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Semantisches HTML</h3>
+                        <p>Sauberer Code nach aktuellen Webstandards für gute Barrierefreiheit und SEO.</p>
+                    </div>
+                    <div class="card">
+                        <h3>CSS Stylings</h3>
+                        <p>Ansprechendes Design mit strukturiertem CSS-Code.</p>
                     </div>
                 </div>
-                <!-- CARS_END -->
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Kontakt</h2>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-Mail:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Nachricht:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Absenden</button>
+                </form>
             </div>
         </section>
     </main>
 
-    <footer class="footer">
+    <footer>
         <div class="container">
-            <p>&copy; Dreshaj Automobile | <a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutz</a></p>
+            <p>&copy; 2026 Webdesign. Alle Rechte vorbehalten.</p>
         </div>
     </footer>
-
 </body>
 </html>
